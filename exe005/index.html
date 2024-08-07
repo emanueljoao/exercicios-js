@@ -14,7 +14,7 @@
         #area{
             height: 200px;
             width: 200px;
-            background-color: chartreuse;
+            background-color: rgb(7, 123, 5);
             line-height: 200px;
             text-align: center;
         }
@@ -25,13 +25,24 @@
     
 
     <script>
-        var clic = window.document.getElementById('area')
-        clic.addEventLIstener('click', clicar)
-        clic.addEventListener('mouseenter', entrar)
-        clic.addEventListener('mouseout', sair)
+        const a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
         function clicar() {
-            clic.innerText = 'Clicou!'
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar() {
+            a.innerText = 'Entrou'
+            a.style.background = 'green'
+        }
+
+        function sair() {
+            a.innerText = 'Saiu'
+            a.style.background = 'blue'
         }
 
     </script>

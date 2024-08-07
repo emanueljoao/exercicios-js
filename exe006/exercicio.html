@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercico País</title>
+</head>
+<body>
+    <h1>Você é Estrangeiro?</h1>
+    <label for="ipais">Seu País: </label><input type="text" name="pais" id="ipais">
+    <input class="verificar" type="button" value="Verificar">
+    <div class="mensagem">
+
+    </div>
+
+    <script>
+        var verificar = window.document.querySelector('input.verificar')
+        verificar.addEventListener('click', clicar)
+
+        function clicar() {
+            var país = window.document.querySelector('input#ipais')
+            var res = window.document.querySelector('div.mensagem')
+            var pais_verdadeiro = String(país.value)
+            res.innerHTML = (`<p>Você vive na(o) ${pais_verdadeiro}</p>`) 
+            if (pais_verdadeiro == 'Brasil' || pais_verdadeiro == 'brasil') {
+                res.innerHTML += ('<p>Você é Brasileiro!</p>')
+            } else {
+                res.innerHTML += ('<p>Você Estrangeiro</p>')
+            }
+        }
+    </script>
+    
+</body>
+</html>

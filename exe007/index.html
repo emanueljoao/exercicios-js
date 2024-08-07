@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+</head>
+<body>
+    <h1>Seu Voto Obrigatório</h1>
+    <label for="idade">Quantos anos você tem? </label><input type="number" name="idade" id="idade">    
+    <input class="verificar" type="button" value="Verificar">
+    <div id="mensagem">
+
+    </div>
+
+    <script>
+        var verificar = window.document.querySelector('input.verificar')
+        verificar.addEventListener('click', clicar)
+        function clicar() {
+            var idade = window.document.querySelector('input#idade');
+            var idade_real = idade.value;
+            var resposta = window.document.querySelector(`div#mensagem`);
+            if (idade_real < 16) {
+                resposta.innerHTML = (`Não vota`)
+            } else if (idade_real < 18 || idade_real > 65) {
+                resposta.innerHTML = (`Voto Opcional`)
+            } else {
+                resposta.innerHTML = (`Voto Obrigatório`)
+            }
+        }
+    </script>
+</body>
+</html>

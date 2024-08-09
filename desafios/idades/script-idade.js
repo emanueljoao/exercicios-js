@@ -4,11 +4,14 @@ verificar.addEventListener('click', clicar)
 function clicar() {
     let ano = document.querySelector('input#ano')
     nascimento = Number(2024 - ano.value)
-    let genero = document.querySelector('input[name="genero"]:checked')
-    let sexo = genero.value
     let resposta = document.querySelector('p.paragrafo-resultado')
-    let imagem = document.querySelector('div.imagem')
-    console.log(typeof sexo)
+    let genero = document.querySelector('input[name="genero"]:checked')
+    if (genero === null || nascimento < 0 || nascimento > 2024) {
+        resposta.innerHTML = `[ERRO] Não conseguimos identificar seu Sexo ou Ano de Nascimento `
+        return;
+    }
+    let sexo = genero.value
+    let imagem = document.querySelector('#foto')
 
     switch (sexo) {
         case "Masculino":
@@ -23,10 +26,15 @@ function clicar() {
                 resposta.innerHTML = `Detectamos que você é um homem de ${nascimento} anos de idade.`
                 imagem.src = 'imagens/homem-jovem.jpg'
 
-            } else {
+            } else if (nascimento >= 31 && nascimento <= 100) {
 
                 resposta.innerHTML = `Detectamos que você é um homem de ${nascimento} anos de idade.`
                 imagem.src = 'imagens/homem-idoso.jpg'
+
+            } else {
+
+                resposta.innerHTML = `Detectamos que você é um homem de ${nascimento} anos de idade.`
+                imagem.src = 'imagens/esqueleto.jpg'
 
             }
 
@@ -44,18 +52,19 @@ function clicar() {
                 resposta.innerHTML = `Detectamos que você é uma mulher de ${nascimento} anos de idade.`
                 imagem.src = 'imagens/mulher-jovem.jpg'
 
-            } else {
+            } else   if (nascimento >= 31 && nascimento <= 100) {
 
                 resposta.innerHTML = `Detectamos que você é uma mulher de ${nascimento} anos de idade.`
                 imagem.src = 'imagens/mulher-idoso.jpg'
 
+            } else {
+
+                resposta.innerHTML = `Detectamos que você é uma mulher de ${nascimento} anos de idade.`
+                imagem.src = 'imagens/esqueleto.jpg'
+
+
             }
 
-            break;
-
-        default:
-
-            imagem.innerHTML += `[ERRO] Não conseguimos identificar seu Sexo ou Ano de Nascimento `
             break;
     }
 

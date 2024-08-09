@@ -1,5 +1,7 @@
 window.addEventListener('load', carregou)
 
+
+
 function carregou() {
     var data = new Date()
     var hora = data.getHours() 

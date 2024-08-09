@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(23, 156, 156);
+    color: aliceblue;
+    font: normal 16pt Verdana;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    color: black;
+    background-color: white;
+    width: 630px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+input, label{
+    margin: 10px;
+}
+
+#fim{
+    margin-left: 30px;
+}
+
+button{
+    margin: 10px auto;
+}
+
+.resultado{
+    text-align: center;
+    margin: 10px;
+}
+
+p{
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}

@@ -10,11 +10,11 @@ function verificar(reload) {
     var mensagem = document.querySelector('p')
     if (inicio === null || fim === null || passo === null) {
         
-        alert = '[ERRO] Alguma informação não foi selecionada'
+        window.alert = '[ERRO] Alguma informação não foi selecionada'
         
     } else if (Number(passo) > 0) {
         
-        alert = 'Selecione um Numero maior que 0'
+        window.alert = 'Selecione um Numero maior que 0'
         mensagem.innerHTML = 'Impossivel Contar'
         
     } else {

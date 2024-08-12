@@ -10,22 +10,40 @@ function verificar(reload) {
     reload.preventDefault()
     console.log(inicio.value, fim.value, passo.value)
 
+    let inicio_n = Number(inicio.value)
+    let fim_n = Number(fim.value)
+    let passo_n = Number(passo.value)
+
     if (inicio.value === '' || fim.value === '' || passo.value === '') {
 
         window.alert('[ERRO] Alguma informação não foi selecionada')
+        mensagem.innerHTML = 'Impossivel Contar'
 
     } else {
 
-        let inicio_n = Number(inicio.value)
-        let fim_n = Number(fim.value)
-        let passo_n = Number(passo.value)
 
-        mensagem.innerHTML = '<p>Contando...</p>'
-        for (let resultado = inicio_n; resultado <= fim_n; resultado += passo_n) {
+        mensagem.innerHTML = ''
+        if (inicio_n < fim_n) {
 
-            mensagem.innerHTML += `${resultado} 👉`
+            for (let resultado = inicio_n; resultado <= fim_n; resultado += passo_n) {
+
+                mensagem.innerHTML += `${resultado} 👉`
+
+            }
 
         }
+
+        else {
+
+
+            for (let resultado = inicio_n; resultado >= fim_n; resultado -= passo_n) {
+
+                mensagem.innerHTML += `${resultado} 👉`
+
+            }
+
+        }
+
         mensagem.innerHTML += `🏁`
 
     }

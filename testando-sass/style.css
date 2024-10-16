@@ -1,0 +1,13 @@
+strong {
+  color: red;
+}
+
+p {
+  font-size: 14px;
+  line-height: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+p em {
+  color: green;
+}/*# sourceMappingURL=style.css.map */

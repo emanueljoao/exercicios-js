@@ -1,0 +1,16 @@
+@import "teste";
+
+@mixin padding-x($pl, $pr: $pl) {
+    padding-left: $pl;
+    padding-right: $pr;
+}
+
+p {
+    font-size: 14px;
+    line-height: 12px;
+    @include padding-x(30px);
+    & em {
+        color: green;
+    }
+}
+

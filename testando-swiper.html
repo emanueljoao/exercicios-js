@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo position-absolute d-sm-block d-none">
+            <img src="imagens-e-icones/logo-incorporadora.png" alt="logo da corporação, incorporadora">
+        </div>
+        <nav>
+            <div class="cabecalho d-flex justify-content-sm-end align-items-center justify-content-center">
+                <div class="nav-menu d-lg-flex d-none">
+                    <ul class="list-unstyled d-flex flex-row m-0">
+                        <li class="item-list-header"><a href="#">Home</a></li>
+                        <hr class="space-line">
+                        <li class="item-list-header"><a href="#">Empreendimentos</a></li>
+                        <hr class="space-line">
+                        <li class="item-list-header"><a href="#">Blog</a></li>
+                        <hr class="space-line">
+                        <li class="item-list-header"><a href="contato-page.html">Contato</a></li>
+                        <hr class="space-line">
+                    </ul>
+                </div>
+
+
+                <div class="header-buttons d-md-flex d-none me-lg-2">
+                    <button class="btn-colaboradores btn"><svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.5" cy="5.5" r="4.125" stroke="white" stroke-width="1.25" />
+                            <circle cx="21" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <circle cx="4" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <path d="M18 15L18 13C18 11.3431 19.3431 10 21 10V10C22.6569 10 24 11.3431 24 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M1 15L1 13C1 11.3431 2.34315 10 4 10V10C5.65685 10 7 11.3431 7 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M7 15.5C7 12.4624 9.46243 10 12.5 10V10C15.5376 10 18 12.4624 18 15.5V19H7V15.5Z"
+                                stroke="white" stroke-width="1.25" />
+                        </svg> Colaborador</button>
+                    <button class="btn-cliente btn"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5438" cy="9.32359" r="3.83727" stroke="white" stroke-width="1.25" />
+                            <path
+                                d="M17.9682 19.7636C17.9682 16.2155 15.0918 13.3391 11.5437 13.3391C7.9955 13.3391 5.11914 16.2155 5.11914 19.7636"
+                                stroke="white" stroke-width="1.25" />
+                            <circle cx="11.5" cy="11.5" r="10.875" stroke="white" stroke-width="1.25" />
+                        </svg> Cliente</button>
+                </div>
+
+                <div class="menu d-lg-none d-sm-flex d-none align-items-center me-sm-5 me-0">
+                    <div class="conjunto-burguer">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <p class="text-menu m-0">MENU</p>
+                </div>
+
+
+                <div class="menu-mobile d-sm-none d-flex justify-content-around align-items-center">
+
+                    <div class="menu d-lg-none d-flex align-items-center me-sm-5 me-0">
+                        <div class="conjunto-burguer">
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
+                        </div>
+                        <p class="text-menu m-0">MENU</p>
+                    </div>
+                    <img src="imagens-e-icones/logo-incorporadora.png" alt="logo da incorporadora"
+                        class="logo-menu-mobile d-sm-none">
+                </div>
+
+
+
+                <div class="conteudo-menu d-lg-none">
+                    <div class="conteudo-list-menu mt-3 d-flex align-items-center flex-column">
+                        <div><a href="#">Home</a></div>
+                        <hr class="line-menu">
+                        <div><a href="#">Empreendimentos</a></div>
+                        <hr class="line-menu">
+                        <div><a href="#">Blog</a></div>
+                        <hr class="line-menu">
+                        <div><a href="contato-page.html">Contato</a></div>
+                        <hr class="line-menu">
+                    </div>
+
+                    <div class="header-buttons d-flex flex-column row-gap-3">
+                        <button class="btn-colaboradores-menu btn"><svg width="25" height="20" viewBox="0 0 25 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12.5" cy="5.5" r="4.125" stroke="white" stroke-width="1.25" />
+                                <circle cx="21" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                                <circle cx="4" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                                <path d="M18 15L18 13C18 11.3431 19.3431 10 21 10V10C22.6569 10 24 11.3431 24 13V15"
+                                    stroke="white" stroke-width="1.25" />
+                                <path d="M1 15L1 13C1 11.3431 2.34315 10 4 10V10C5.65685 10 7 11.3431 7 13V15"
+                                    stroke="white" stroke-width="1.25" />
+                                <path
+                                    d="M7 15.5C7 12.4624 9.46243 10 12.5 10V10C15.5376 10 18 12.4624 18 15.5V19H7V15.5Z"
+                                    stroke="white" stroke-width="1.25" />
+                            </svg> Colaborador</button>
+                        <button class="btn-cliente-menu btn"><svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11.5438" cy="9.32359" r="3.83727" stroke="white" stroke-width="1.25" />
+                                <path
+                                    d="M17.9682 19.7636C17.9682 16.2155 15.0918 13.3391 11.5437 13.3391C7.9955 13.3391 5.11914 16.2155 5.11914 19.7636"
+                                    stroke="white" stroke-width="1.25" />
+                                <circle cx="11.5" cy="11.5" r="10.875" stroke="white" stroke-width="1.25" />
+                            </svg> Cliente</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </nav>
+    </header>
+    <main>
+        <section class="section-ultimos-lotes">
+            <div
+                class="conteudo-section-ultimos-lotes d-flex flex-sm-row flex-column justify-content-between position-relative">
+                <img src="" alt="imagem de um lote de zona rural"
+                    class="img-ult-lotes col-lg-5 col-md-6 col-sm-5 col-12">
+                <div class="ultimos-lotes col-md-4 col-sm-5 col-12 offset-lg-1 offset-md-7 offset-sm-6">
+                    <h1>
+                        Últimos Lotes <br> Disponíveis
+                    </h1>
+                    <h2>Não perca a chace de viver bem</h2>
+                    <p>Presidente Prudente - sp • 110 lotes</p>
+
+                    <button class="btn-ult-lotes btn">CLIQUE E CONHEÇA</button>
+                </div>
+
+                <div
+                    class="indicadores-ult-lotes d-flex flex-lg-column flex-row align-items-center justify-content-sm-evenly justify-content-center col-sm-1 col-12 offset-lg-1">
+                    <div class="btn-carrossel d-flex align-items-center justify-content-center" id="btn-direita">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.08882 1.47461L2.24072 7.32271L8.08882 13.1708" stroke="white"
+                                stroke-width="2" />
+                            <path d="M8.08882 1.47461L2.24072 7.32271L8.08882 13.1708" stroke="white"
+                                stroke-opacity="0.2" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <div class="btn-carrossel d-flex align-items-center justify-content-center" id="btn-esquerda">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.07524 12.5254L6.92334 6.67729L1.07524 0.829187" stroke="white"
+                                stroke-width="2" />
+                            <path d="M1.07524 12.5254L6.92334 6.67729L1.07524 0.829187" stroke="white"
+                                stroke-opacity="0.2" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <div class="indicadores-imgs d-sm-block d-none"></div>
+                    <div class="indicadores-imgs d-sm-block d-none"></div>
+                    <div class="indicadores-imgs d-sm-block d-none"></div>
+                    <div class="indicadores-imgs d-sm-block d-none"></div>
+                    <div class="indicadores-imgs d-sm-block d-none"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container-xl mt-5">
+            <!----------------------- PRIMEIRA PARTE FOOTER --------------------->
+            <div class="atendiment-list-infos-btns col-lg-12 col-10 d-flex flex-row justify-content-between">
+                <div class="div-atendimento d-sm-block d-none">
+
+                    <p><strong>Atendimento</strong></p>
+                    <div class="d-flex flex-row align-items-center">
+                        <div class="div-icon-location d-flex m-2">
+                            <svg width="11" height="16" viewBox="0 0 11 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11 5.69255C11 2.57407 8.57721 0.0412758 5.57391 0.000492065C2.56411 -0.0402916 0.0625154 2.45929 0.00117386 5.57398C-0.00938826 6.10964 0.0515471 6.62847 0.175043 7.12166C0.918454 10.4415 3.84579 14.6048 5.16483 15.8641C5.35455 16.0453 5.64622 16.0453 5.83593 15.8641C7.15498 14.6053 10.0823 10.4415 10.8257 7.12166C10.9395 6.66505 11 6.18616 11 5.69255Z"
+                                    fill="white" />
+                                <circle cx="5.5" cy="5.5" r="1.5" fill="black" />
+                            </svg>
+                        </div>
+                        <p class="m-0">Seg à Sex <br> das 8hs às 18hs</p>
+                    </div>
+                </div>
+
+                <div class="list-infos">
+
+                    <ul>
+                        <li>Home</li>
+                        <li>Blog</li>
+                        <li>Contato</li>
+                        <li>Trabalhe Conosco</li>
+                        <li>Empreendimentos</li>
+                        <li>Obras Concluídas</li>
+                        <li>Obras em Andamento</li>
+                        <li>Ofereça sua Área</li>
+                    </ul>
+
+                </div>
+
+                <div class="footer-buttons d-lg-flex flex-column d-none me-lg-2">
+                    <button class="btn-colaboradores-footer btn">
+                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.5" cy="5.5" r="4.125" stroke="white" stroke-width="1.25" />
+                            <circle cx="21" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <circle cx="4" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <path d="M18 15L18 13C18 11.3431 19.3431 10 21 10V10C22.6569 10 24 11.3431 24 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M1 15L1 13C1 11.3431 2.34315 10 4 10V10C5.65685 10 7 11.3431 7 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M7 15.5C7 12.4624 9.46243 10 12.5 10V10C15.5376 10 18 12.4624 18 15.5V19H7V15.5Z"
+                                stroke="white" stroke-width="1.25" />
+                        </svg> Colaborador</button>
+                    <button class="btn-cliente-footer btn">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5438" cy="9.32359" r="3.83727" stroke="white" stroke-width="1.25" />
+                            <path
+                                d="M17.9682 19.7636C17.9682 16.2155 15.0918 13.3391 11.5437 13.3391C7.9955 13.3391 5.11914 16.2155 5.11914 19.7636"
+                                stroke="white" stroke-width="1.25" />
+                            <circle cx="11.5" cy="11.5" r="10.875" stroke="white" stroke-width="1.25" />
+                        </svg> Cliente</button>
+                </div>
+            </div>
+            <!------------------------ SEGUNDA PARTE DO FOOTER ------------------------>
+            <div class="central-politicas-redes-sociais d-flex flex-row justify-content-between mt-sm-5 mt-3">
+
+                <div class="atendimento-politicas d-flex flex-sm-row flex-column-reverse">
+
+                    <div class="atendimento-central-footer">
+                        <p><strong>Central de Atendimento</strong></p>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="div-icon-phone d-flex m-2">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.4975 9.38588C12.858 9.51895 14.7939 10.4806 15.1873 10.6794C15.5811 10.8783 15.8437 10.9777 15.9426 11.1434C16.0411 11.3092 16.0411 12.1051 15.7134 13.0336C15.3847 13.9621 13.8123 14.8092 13.0559 14.9237C12.3777 15.0261 11.5199 15.0688 10.5765 14.766C10.0047 14.5827 9.27168 14.3382 8.33233 13.9284C4.38347 12.2065 1.80461 8.19124 1.60769 7.9261L1.60489 7.92233C1.39778 7.64352 0 5.7618 0 3.81391C0 1.85699 1.01693 0.895854 1.37745 0.497641C1.73797 0.0994279 2.16464 0 2.4272 0C2.68976 0 2.95232 0.00251108 3.18156 0.0140608C3.42324 0.0261126 3.74746 -0.0783361 4.06721 0.696497C4.39541 1.49242 5.18259 3.44934 5.28056 3.6482C5.37902 3.84705 5.44466 4.07955 5.31338 4.34469C5.1821 4.60983 4.75544 5.17024 4.32927 5.70454C4.15473 5.92348 3.92747 6.11782 4.15672 6.51603C4.38646 6.91425 5.17663 8.21585 6.34671 9.26988C7.84998 10.6242 9.11852 11.044 9.51236 11.2429C9.90621 11.4422 10.1354 11.4086 10.3652 11.1434C10.5949 10.8783 11.3493 9.98245 11.6119 9.58473C11.8739 9.18702 12.137 9.25331 12.4975 9.38588Z"
+                                        fill="#E5E5E5" />
+                                </svg>
+                            </div>
+                            <p class="m-0">18 3999 9999</p>
+                        </div>
+                    </div>
+
+                    <div class="div-atendimento d-block d-sm-none">
+
+                        <p><strong>Atendimento</strong></p>
+                        <div class="d-flex flex-row align-items-center">
+                            <div class="div-icon-location d-flex m-2">
+                                <svg width="11" height="16" viewBox="0 0 11 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 5.69255C11 2.57407 8.57721 0.0412758 5.57391 0.000492065C2.56411 -0.0402916 0.0625154 2.45929 0.00117386 5.57398C-0.00938826 6.10964 0.0515471 6.62847 0.175043 7.12166C0.918454 10.4415 3.84579 14.6048 5.16483 15.8641C5.35455 16.0453 5.64622 16.0453 5.83593 15.8641C7.15498 14.6053 10.0823 10.4415 10.8257 7.12166C10.9395 6.66505 11 6.18616 11 5.69255Z"
+                                        fill="white" />
+                                    <circle cx="5.5" cy="5.5" r="1.5" fill="black" />
+                                </svg>
+                            </div>
+                            <p class="m-0">Seg à Sex <br> das 8hs às 18hs</p>
+                        </div>
+                    </div>
+
+                    <div class="footer-break-xl-buttons d-flex d-sm-none flex-column row-gap-2">
+                        <button class="btn-colaboradores-footer btn">
+                            <svg width="25" height="20" viewBox="0 0 25 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12.5" cy="5.5" r="4.125" stroke="white" stroke-width="1.25" />
+                                <circle cx="21" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                                <circle cx="4" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                                <path d="M18 15L18 13C18 11.3431 19.3431 10 21 10V10C22.6569 10 24 11.3431 24 13V15"
+                                    stroke="white" stroke-width="1.25" />
+                                <path d="M1 15L1 13C1 11.3431 2.34315 10 4 10V10C5.65685 10 7 11.3431 7 13V15"
+                                    stroke="white" stroke-width="1.25" />
+                                <path
+                                    d="M7 15.5C7 12.4624 9.46243 10 12.5 10V10C15.5376 10 18 12.4624 18 15.5V19H7V15.5Z"
+                                    stroke="white" stroke-width="1.25" />
+                            </svg> Colaboradores</button>
+                        <button class="btn-cliente-footer btn">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11.5438" cy="9.32359" r="3.83727" stroke="white" stroke-width="1.25" />
+                                <path
+                                    d="M17.9682 19.7636C17.9682 16.2155 15.0918 13.3391 11.5437 13.3391C7.9955 13.3391 5.11914 16.2155 5.11914 19.7636"
+                                    stroke="white" stroke-width="1.25" />
+                                <circle cx="11.5" cy="11.5" r="10.875" stroke="white" stroke-width="1.25" />
+                            </svg> Cliente
+                        </button>
+                    </div>
+
+                    <div class="politica-privacidade">
+                        <p><a href="#">Política de Privacidade</a></p>
+                        <p><a href="#">Preferência de Cookies</a> </p>
+                    </div>
+
+                </div>
+
+                <div class="redes-sociais-footer d-lg-flex d-none flex-row justify-content-between">
+                    <div class="icons">
+                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.4991 15C10.4974 15 10.4954 15 10.4933 15C9.85965 14.9955 4.25797 14.9452 2.67088 14.5211C1.56172 14.2266 0.686394 13.3618 0.387221 12.2654C-0.0282507 10.7243 -0.00153886 7.75733 0.0013378 7.52051C-0.00153886 7.28491 -0.0282507 4.2932 0.385988 2.73946C0.386399 2.73783 0.38681 2.73662 0.387221 2.73499C0.683106 1.65123 1.57816 0.759607 2.66841 0.464294C2.67088 0.463482 2.67375 0.46267 2.67663 0.462263C4.24564 0.0540255 9.85883 0.00446828 10.4937 0H10.5053C11.1406 0.00446828 16.7571 0.0548379 18.3298 0.47973C19.4361 0.773418 20.311 1.63701 20.6105 2.73215C21.0412 4.28711 21.0014 7.28491 20.9973 7.53798C21.0001 7.78739 21.0256 10.7275 20.6126 12.2764C20.6122 12.278 20.6118 12.2792 20.6114 12.2809C20.3122 13.3772 19.4369 14.2416 18.3265 14.5369C18.3248 14.5373 18.3236 14.5377 18.322 14.5381C16.7529 14.9456 11.1398 14.9955 10.5053 15C10.5032 15 10.5011 15 10.4991 15ZM1.97185 3.15501C1.60692 4.52636 1.64144 7.47989 1.64186 7.50955V7.53107C1.63117 8.34999 1.66939 10.7222 1.97185 11.8454C2.11856 12.3832 2.55047 12.8093 3.09786 12.9552C4.26907 13.2683 8.83104 13.3666 10.4987 13.3784C12.1704 13.3666 16.7398 13.2712 17.902 12.9706C18.4477 12.8248 18.878 12.3999 19.0259 11.8612C19.3292 10.7214 19.367 8.36096 19.3559 7.54692C19.3559 7.53839 19.3559 7.52986 19.3559 7.52133C19.3711 6.69226 19.3411 4.29279 19.0272 3.16029C19.0267 3.15907 19.0263 3.15826 19.0263 3.15704C18.8788 2.61678 18.4469 2.19067 17.8995 2.04485C16.7398 1.73166 12.17 1.63336 10.4987 1.62158C8.82775 1.63336 4.26331 1.72882 3.09745 2.029C2.56074 2.17646 2.11897 2.618 1.97185 3.15501ZM19.8191 12.07H19.8195H19.8191ZM8.40817 10.7836V4.21602L14.1504 7.4998L8.40817 10.7836Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+
+                    <div class="icons">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 5.5H5V3.5C5 2.94812 5.44812 2.5 6 2.5H7V0H5C3.34312 0 2 1.34312 2 3V5.5H0V8H2V16H5V8H7L8 5.5Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+
+                    <div class="icons">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.589 0H5.72228C2.56251 0 0 2.64281 0 5.90159V12.9835C0 16.2423 2.56251 18.8851 5.72228 18.8851H12.589C15.7488 18.8851 18.3113 16.2423 18.3113 12.9835V5.90159C18.3113 2.64281 15.7488 0 12.589 0ZM16.5946 12.9835C16.5946 15.2615 14.7978 17.1146 12.589 17.1146H5.72228C3.51348 17.1146 1.71668 15.2615 1.71668 12.9835V5.90159C1.71668 3.62358 3.51348 1.77048 5.72228 1.77048H12.589C14.7978 1.77048 16.5946 3.62358 16.5946 5.90159V12.9835Z"
+                                fill="black" />
+                            <path
+                                d="M9.15546 4.72168C6.62729 4.72168 4.57764 6.83556 4.57764 9.44296C4.57764 12.0504 6.62729 14.1642 9.15546 14.1642C11.6836 14.1642 13.7333 12.0504 13.7333 9.44296C13.7333 6.83556 11.6836 4.72168 9.15546 4.72168ZM9.15546 12.3938C7.57826 12.3938 6.29432 11.0696 6.29432 9.44296C6.29432 7.81522 7.57826 6.49216 9.15546 6.49216C10.7327 6.49216 12.0166 7.81522 12.0166 9.44296C12.0166 11.0696 10.7327 12.3938 9.15546 12.3938Z"
+                                fill="black" />
+                            <path
+                                d="M14.1912 4.7216C14.444 4.7216 14.6489 4.51022 14.6489 4.24947C14.6489 3.98872 14.444 3.77734 14.1912 3.77734C13.9384 3.77734 13.7334 3.98872 13.7334 4.24947C13.7334 4.51022 13.9384 4.7216 14.1912 4.7216Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <!----------------------------------- FOOTER MEDIA QUERY BTNS-E-REDES-SOCIAIS ----------------------------->
+            <div
+                class="buttons-social-media col-lg-12 col-md-10 d-lg-none d-flex  flex-row justify-content-sm-between justify-content-center mt-5">
+
+                <div class="footer-break-xl-buttons d-sm-flex d-none flex-row me-lg-2">
+                    <button class="btn-colaboradores-footer btn">
+                        <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12.5" cy="5.5" r="4.125" stroke="white" stroke-width="1.25" />
+                            <circle cx="21" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <circle cx="4" cy="7" r="2.625" stroke="white" stroke-width="1.25" />
+                            <path d="M18 15L18 13C18 11.3431 19.3431 10 21 10V10C22.6569 10 24 11.3431 24 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M1 15L1 13C1 11.3431 2.34315 10 4 10V10C5.65685 10 7 11.3431 7 13V15"
+                                stroke="white" stroke-width="1.25" />
+                            <path d="M7 15.5C7 12.4624 9.46243 10 12.5 10V10C15.5376 10 18 12.4624 18 15.5V19H7V15.5Z"
+                                stroke="white" stroke-width="1.25" />
+                        </svg> Colaborador</button>
+                    <button class="btn-cliente-footer btn">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.5438" cy="9.32359" r="3.83727" stroke="white" stroke-width="1.25" />
+                            <path
+                                d="M17.9682 19.7636C17.9682 16.2155 15.0918 13.3391 11.5437 13.3391C7.9955 13.3391 5.11914 16.2155 5.11914 19.7636"
+                                stroke="white" stroke-width="1.25" />
+                            <circle cx="11.5" cy="11.5" r="10.875" stroke="white" stroke-width="1.25" />
+                        </svg> Cliente</button>
+                </div>
+
+                <div class="redes-sociais-footer d-flex flex-row justify-content-sm-between justify-content-evenly">
+                    <div class="icons">
+                        <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.4991 15C10.4974 15 10.4954 15 10.4933 15C9.85965 14.9955 4.25797 14.9452 2.67088 14.5211C1.56172 14.2266 0.686394 13.3618 0.387221 12.2654C-0.0282507 10.7243 -0.00153886 7.75733 0.0013378 7.52051C-0.00153886 7.28491 -0.0282507 4.2932 0.385988 2.73946C0.386399 2.73783 0.38681 2.73662 0.387221 2.73499C0.683106 1.65123 1.57816 0.759607 2.66841 0.464294C2.67088 0.463482 2.67375 0.46267 2.67663 0.462263C4.24564 0.0540255 9.85883 0.00446828 10.4937 0H10.5053C11.1406 0.00446828 16.7571 0.0548379 18.3298 0.47973C19.4361 0.773418 20.311 1.63701 20.6105 2.73215C21.0412 4.28711 21.0014 7.28491 20.9973 7.53798C21.0001 7.78739 21.0256 10.7275 20.6126 12.2764C20.6122 12.278 20.6118 12.2792 20.6114 12.2809C20.3122 13.3772 19.4369 14.2416 18.3265 14.5369C18.3248 14.5373 18.3236 14.5377 18.322 14.5381C16.7529 14.9456 11.1398 14.9955 10.5053 15C10.5032 15 10.5011 15 10.4991 15ZM1.97185 3.15501C1.60692 4.52636 1.64144 7.47989 1.64186 7.50955V7.53107C1.63117 8.34999 1.66939 10.7222 1.97185 11.8454C2.11856 12.3832 2.55047 12.8093 3.09786 12.9552C4.26907 13.2683 8.83104 13.3666 10.4987 13.3784C12.1704 13.3666 16.7398 13.2712 17.902 12.9706C18.4477 12.8248 18.878 12.3999 19.0259 11.8612C19.3292 10.7214 19.367 8.36096 19.3559 7.54692C19.3559 7.53839 19.3559 7.52986 19.3559 7.52133C19.3711 6.69226 19.3411 4.29279 19.0272 3.16029C19.0267 3.15907 19.0263 3.15826 19.0263 3.15704C18.8788 2.61678 18.4469 2.19067 17.8995 2.04485C16.7398 1.73166 12.17 1.63336 10.4987 1.62158C8.82775 1.63336 4.26331 1.72882 3.09745 2.029C2.56074 2.17646 2.11897 2.618 1.97185 3.15501ZM19.8191 12.07H19.8195H19.8191ZM8.40817 10.7836V4.21602L14.1504 7.4998L8.40817 10.7836Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+
+                    <div class="icons">
+                        <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8 5.5H5V3.5C5 2.94812 5.44812 2.5 6 2.5H7V0H5C3.34312 0 2 1.34312 2 3V5.5H0V8H2V16H5V8H7L8 5.5Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+
+                    <div class="icons">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.589 0H5.72228C2.56251 0 0 2.64281 0 5.90159V12.9835C0 16.2423 2.56251 18.8851 5.72228 18.8851H12.589C15.7488 18.8851 18.3113 16.2423 18.3113 12.9835V5.90159C18.3113 2.64281 15.7488 0 12.589 0ZM16.5946 12.9835C16.5946 15.2615 14.7978 17.1146 12.589 17.1146H5.72228C3.51348 17.1146 1.71668 15.2615 1.71668 12.9835V5.90159C1.71668 3.62358 3.51348 1.77048 5.72228 1.77048H12.589C14.7978 1.77048 16.5946 3.62358 16.5946 5.90159V12.9835Z"
+                                fill="black" />
+                            <path
+                                d="M9.15546 4.72168C6.62729 4.72168 4.57764 6.83556 4.57764 9.44296C4.57764 12.0504 6.62729 14.1642 9.15546 14.1642C11.6836 14.1642 13.7333 12.0504 13.7333 9.44296C13.7333 6.83556 11.6836 4.72168 9.15546 4.72168ZM9.15546 12.3938C7.57826 12.3938 6.29432 11.0696 6.29432 9.44296C6.29432 7.81522 7.57826 6.49216 9.15546 6.49216C10.7327 6.49216 12.0166 7.81522 12.0166 9.44296C12.0166 11.0696 10.7327 12.3938 9.15546 12.3938Z"
+                                fill="black" />
+                            <path
+                                d="M14.1912 4.7216C14.444 4.7216 14.6489 4.51022 14.6489 4.24947C14.6489 3.98872 14.444 3.77734 14.1912 3.77734C13.9384 3.77734 13.7334 3.98872 13.7334 4.24947C13.7334 4.51022 13.9384 4.7216 14.1912 4.7216Z"
+                                fill="black" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!------------------------------------------- PENULTIMA PARTE DO FOOTER ------------------------------------>
+            <div class="incorporadora-oxigen d-flex flex-lg-row flex-column align-items-center mb-sm-0 mb-5">
+
+                <div><img src="imagens-e-icones/logo-incorporadora-footer.png" alt="logo da incorporadora"></div>
+
+                <div class="offset-1">
+                    <p class="mt-3">Todos os direitos reservados © 2024 | Incorporadora - Criação<img
+                            src="imagens-e-icones/logo-oxigenweb.png" alt="logo da oxigenweb"></p>
+                </div>
+
+            </div>
+        </div>
+
+        <!------------------------------- ULTIMA PARTE DO FOOTER --------------------------------->
+        <div class="contacts-number d-sm-flex mt-sm-5 mt-0">
+            <div class="contact-footer d-flex justify-content-around align-items-center">
+                <div class="form-contact d-sm-flex d-none align-items-center">
+                    <svg width="32" height="25" viewBox="0 0 32 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="me-2">
+                        <rect x="1" y="1" width="30" height="22.8889" rx="3" stroke="white" stroke-width="2" />
+                        <path d="M0.888672 1.77734L15.9998 13.3329L31.1109 1.77734" stroke="white" stroke-width="2" />
+                    </svg>
+                    <p><strong>Formulário</strong><br>de Contato</p>
+                </div>
+                <hr class="space-line-footer d-sm-block d-none">
+                <div class="left-whatsapp d-flex align-items-center">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="me-2">
+                        <circle cx="14" cy="14" r="13" stroke="white" stroke-width="2" />
+                        <path
+                            d="M17.7042 15.9649C18.0011 16.0745 19.5953 16.8664 19.9193 17.0302C20.2436 17.194 20.4598 17.2758 20.5413 17.4123C20.6224 17.5488 20.6224 18.2042 20.3525 18.9689C20.0818 19.7335 18.7869 20.4312 18.1641 20.5255C17.6055 20.6098 16.8991 20.645 16.1222 20.3956C15.6512 20.2447 15.0476 20.0433 14.274 19.7058C11.022 18.2878 8.89826 14.9811 8.73609 14.7627L8.73378 14.7596C8.56322 14.53 7.41211 12.9804 7.41211 11.3762C7.41211 9.76464 8.24958 8.97311 8.54648 8.64517C8.84338 8.31723 9.19475 8.23535 9.41098 8.23535C9.6272 8.23535 9.84343 8.23742 10.0322 8.24693C10.2312 8.25686 10.4983 8.17084 10.7616 8.80894C11.0319 9.4644 11.6801 11.076 11.7608 11.2397C11.8419 11.4035 11.8959 11.595 11.7878 11.8133C11.6797 12.0317 11.3284 12.4932 10.9774 12.9332C10.8337 13.1135 10.6465 13.2736 10.8353 13.6015C11.0245 13.9294 11.6752 15.0013 12.6388 15.8694C13.8768 16.9847 14.9215 17.3304 15.2458 17.4942C15.5702 17.6584 15.7589 17.6307 15.9481 17.4123C16.1373 17.194 16.7586 16.4562 16.9748 16.1287C17.1906 15.8011 17.4073 15.8557 17.7042 15.9649Z"
+                            fill="white" />
+                    </svg>
+                    <p><strong>Vendas </strong><br> 18 3999 9999</p>
+                </div>
+                <hr class="space-line-footer">
+                <div class="right-whatsapp d-flex align-items-center">
+                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="me-2">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M23.6516 4.02352C21.0493 1.43023 17.5881 0.00173204 13.9007 0C6.30229 0 0.11878 6.15392 0.115734 13.7177C0.114864 16.1356 0.749227 18.496 1.95573 20.5766L0 27.6857L7.30779 25.7779C9.32139 26.8708 11.5882 27.4471 13.8955 27.4476H13.9012C21.4987 27.4476 27.6831 21.2932 27.6857 13.729C27.687 10.0631 26.2547 6.61637 23.6516 4.02352ZM13.9007 25.131H13.8959C11.8401 25.1301 9.82392 24.5802 8.06441 23.5414L7.64629 23.2941L3.30974 24.4265L4.46708 20.2185L4.19471 19.7872C3.04781 17.9716 2.44217 15.8732 2.44304 13.719C2.44565 7.43173 7.58538 2.31703 13.9051 2.31703C16.9655 2.3179 19.8423 3.50564 22.0056 5.66116C24.1684 7.81667 25.3593 10.6815 25.3584 13.7281C25.3558 20.0154 20.2161 25.131 13.9007 25.131ZM20.1852 16.5907C19.841 16.4193 18.1472 15.59 17.8318 15.4753C17.5163 15.361 17.2862 15.3038 17.0569 15.6468C16.8271 15.9897 16.1671 16.7622 15.9661 16.9908C15.7651 17.2195 15.5645 17.2485 15.2199 17.0766C14.8753 16.9051 13.7654 16.5431 12.4501 15.3753C11.4264 14.4664 10.735 13.344 10.534 13.0007C10.3334 12.6573 10.5322 12.4897 10.685 12.3009C11.0578 11.8402 11.4311 11.357 11.546 11.1283C11.6609 10.8997 11.6034 10.6992 11.5173 10.5277C11.4316 10.3563 10.7428 8.66884 10.4557 7.98252C10.1759 7.31438 9.89223 7.40445 9.68078 7.39406C9.4802 7.3841 9.25047 7.38193 9.02074 7.38193C8.79102 7.38193 8.41771 7.46767 8.10227 7.81105C7.78683 8.15442 6.89706 8.9832 6.89706 10.6706C6.89706 12.3581 8.13142 13.9879 8.30371 14.2165C8.47601 14.4452 10.7324 17.9075 14.1874 19.3923C15.0093 19.7456 15.6507 19.9565 16.151 20.1146C16.9764 20.3757 17.7269 20.3389 18.3204 20.2505C18.9822 20.1518 20.3579 19.4213 20.6455 18.6207C20.9322 17.82 20.9322 17.1337 20.8461 16.9908C20.7595 16.8479 20.5298 16.7622 20.1852 16.5907Z"
+                            fill="white" />
+                    </svg>
+                    <p><strong>Whatsapp</strong> <br> 18 3999 9999</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
